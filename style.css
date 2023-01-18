@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--deep-dark: #232526;
+	--light-dark: #414345;
+	--light-green: #acbb78;
+	--light: #f7f8f8;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	margin-top: 8em;
+	font-family: 'Open Sans', sans-serif;
+	background: #134E5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+}
+
+header {
+	border-radius: 0.8em;
+	padding: 2em;
+}
+header h1 {
+	font-size: 3rem;
+	color: #232526;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+header input {
+	font-size: 2.3rem;
+	background-color: #414345;
+	color: #f7f8f8;
+	width: 100%;
+	padding: 1.3em 1em;
+	border-radius: 0.8em;
+	margin-right: 2em;
+	border: none;
+	opacity: 0.6;
+	margin-bottom: 1em;
+}
+
+header button {
+	font-size: 2.3rem;
+	text-align: center;
+	color: black;
+	background-color: #414345; 
+	width: 100%;
+	padding: 1em 1em;
+	border-radius: 0.8em;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s;
+	border: none;
+	opacity: 0.6;
+}
+
+header button:hover{
+	 background-color: #64a88c;  
+	opacity: 1;
+}
+.error-info {
+	font-size: 2rem;
+	margin-top: 0.8em;
+	/* color: #0b3b23; */
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+
+.todo{
+	padding: 2em 0;
+	border-radius: 0.8em;
+}
+
+.todo h3{
+	font-size: 2.5rem;
+	text-align: center;
+	margin-top: 1em;
+	
+}
+.todo li {
+	font-size: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0.8em;
+margin: 0.5em;
+	padding-left: 2em;
+	text-align: left;
+	background-color: #f7f8f8;
+}
+
+.tools {
+	display: inline-block;
+}
+
+.tools button {
+	padding: 2em 1em;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+ .tools button:hover {
+	background-color:#64a88c ;
+	/* background-color: #71B280; */
+	color: black;
+} 
+
+
+.complete {
+	font-weight: bold;
+	color: #134E5E;
+}
+
+.edit {
+	font-weight: bold;
+	color: #cf3582;
+}
+
+.delete {
+	font-weight: bold;
+	color: crimson;
+}
+
+.completed {
+	font-size: 1.4rem;
+	color: gray;
+	text-decoration: line-through;
+	font-style: italic;
+}
+
+.popup {
+	display:none;
+	position: fixed;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	width: 60em;
+	bottom: 35em;
+	padding: 1em 1em 1em 1em;
+	background-color: #134E5E;
+	border-radius: 0.8em;
+}
+
+.popup h3{
+	font-size: 2rem;
+	text-align: center;
+	/* margin-bottom: 1.5em; */
+	margin: 1em 0 1.5em 0;
+}
+.popup-body{
+	display: flex;
+	flex-direction: column;
+	width: 21em;
+	font-size: 2rem;
+	padding: 0.5em, 0, 0.5em,0;
+}
+.popup-body input{
+	font-size: 2rem;
+	padding: 0.25em 0 0.25em 0;
+	border-radius: 0.4em;
+	border: none;
+	
+}
+.popup-body .btns{
+	margin-top: 2em;
+	display: flex;
+	justify-content:flex-end;
+
+
+}
+.popup-body .btns .popup-btn{
+	font-size: 2rem;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	margin-left: 1em;
+	border-radius: 0.4em;
+	border: none;
+	cursor: pointer;
+	transition: background-color .3s;
+}
+.popup-body .btns .popup-btn:hover{
+	background-color: #64a88c;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/30316f3f3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <header>
+                <input class="taskInput" placeholder="Any plans...?"></input>
+                <button class="todo-btn">Create a task</button>
+            </header>
+            <div class="todo">
+                <h3>List of tasks</h3>
+                <p class="error-info"></p>
+                <ul>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+        <section class="popup">
+            <h3>Edytuj zadanie:</h3>
+            <div class="popup-body">
+                <p class="popup-body-info"></p>
+                <input type="text" placeholder="Enter your tast">
+                <div class="btns">
+                    <button class="popup-btn accept">Accept</button>
+                    <button class="popup-btn cancel">Cancel</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+<script src="./script.js"></script>
+
+</body>
